@@ -1,15 +1,14 @@
 <template>
-  <div>
+  <div class="bg">
     <nav
-      class="navbar container"
+      class="navbar container bg-o "
       role="navigation"
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <a class="navbar-item">
+        <!-- <a class="navbar-item">
           @Fooku
-        </a>
-
+        </a> -->
         <a
           role="button"
           class="navbar-burger burger"
@@ -29,8 +28,11 @@
           <router-link to="/education" class="navbar-item"
             >EDUCATION
           </router-link>
-          <router-link to="/education" class="navbar-item"
+          <router-link to="/work-experience" class="navbar-item"
             >WORK EXPERIENCE
+          </router-link>
+          <router-link to="/certification" class="navbar-item"
+            >CERTIFICATIONS
           </router-link>
         </div>
       </div>
@@ -60,6 +62,41 @@ export default {
 <style>
 body {
   font-family: 'Questrial', sans-serif !important;
+}
+.bg {
+  background-image: url('~@/assets/images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+.bg-o {
+  background-color: transparent !important;
+}
+.navbar .navbar-menu .navbar-end .router-link-exact-active {
+  background-color: '';
+  color: '';
+  border-bottom: 2px solid #7957d5;
+}
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: transparent !important;
+  color: #4a4a4a !important;
+}
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: #fafafa;
+  color: #7957d5;
 }
 .main-m {
   margin-top: 3rem !important;

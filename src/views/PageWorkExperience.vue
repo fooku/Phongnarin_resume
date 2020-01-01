@@ -4,26 +4,29 @@
       <div :class="`card card-main ${anime}`">
         <header class="card-header">
           <p class="card-header-title">
-            Education
+            Work Experience
           </p>
         </header>
         <div class="card-content p">
           <div class="timeline right" id="timeline-5e0c4476567b9">
             <div class="timeline-item">
-              <h4>2015 - 2019</h4>
+              <h4>2019</h4>
               <span class="item-small"
-                >Suranaree University of Technology,</span
+                >Cooperative Education at General Electronic Commerce ,Bangkok
+                (4 months)</span
               >
               <p>
-                Nakhon Ratchasima Bachelor of Engineering in Computer
-                Engineering,
+                Worked as a full stack developer in a team to develop web
+                applications using React, Redux and Golang.
               </p>
             </div>
             <div class="timeline-item">
-              <h4>Specialization Course</h4>
-              <span class="item-period">2008 - 2014</span>
+              <h4>2018 - 2019</h4>
+              <span class="item-period">freelance</span>
               <p>
-                Ratchasima Witthayalai School, Nakhon Ratchasima
+                Developed e-learning websites; www.wellbalancedenglish.com,
+                www.thetoptutoronline.com using React ,Redux ,Golang and MongoDB
+                and designed user interface.
               </p>
             </div>
             <!-- <div class="timeline-item">
@@ -61,43 +64,4 @@ export default {
 }
 </script>
 
-<style>
-.timeline {
-  border-left: 2px solid #e0e0e0;
-  padding: 20px 0;
-}
-.timeline-item {
-  position: relative;
-  padding: 15px 20px 10px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  border-left: 2px solid rgba(0, 0, 0);
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-}
-.timeline-item:before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 10px;
-  width: 12px;
-  height: 12px;
-  top: 20px;
-  left: -29px;
-  border: 3px solid rgba(0, 0, 0);
-  z-index: 2;
-}
-.timeline-item:after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  background-color: rgba(0, 0, 0);
-  border-radius: 10px;
-  width: 29px;
-  height: 2px;
-  top: 25px;
-  left: -29px;
-  z-index: 1;
-}
-</style>
+<style></style>
