@@ -35,6 +35,9 @@
           <router-link to="/certification" class="navbar-item"
             >CERTIFICATIONS
           </router-link>
+          <router-link to="/portfolio" class="navbar-item"
+            >PORTFOLIO
+          </router-link>
         </div>
       </div>
     </nav>
@@ -62,7 +65,7 @@ export default {
 
 <style>
 body {
-  font-family: 'Questrial', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
 }
 .bg {
   background-image: url('~@/assets/images/bg.jpg');
@@ -76,7 +79,7 @@ body {
 .navbar .navbar-menu .navbar-end .router-link-exact-active {
   background-color: '';
   color: '';
-  border-bottom: 2px solid #7957d5;
+  border-bottom: 2px solid #00a5a9;
 }
 a.navbar-item:focus,
 a.navbar-item:focus-within,
@@ -157,5 +160,8 @@ a.navbar-item.is-active,
   transform-origin: center bottom;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+.button.is-success {
+  background-color: #00a5a9 !important;
 }
 </style>

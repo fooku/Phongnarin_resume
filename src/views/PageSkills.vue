@@ -13,17 +13,32 @@
               <p class="is-size-4 p-title">Technologies & Framework</p>
 
               <span>Vue/Vuex</span>
-              <b-progress :value="vue" size="is-medium" show-value>
+              <b-progress
+                type="is-success"
+                :value="vue"
+                size="is-medium"
+                show-value
+              >
                 Intermediate</b-progress
               >
 
               <span>React/Redux</span>
-              <b-progress :value="react" show-value size="is-medium">
+              <b-progress
+                type="is-success"
+                :value="react"
+                show-value
+                size="is-medium"
+              >
                 Intermediate</b-progress
               >
 
               <span>Flutter</span>
-              <b-progress :value="basic" size="is-medium" show-value>
+              <b-progress
+                type="is-success"
+                :value="basic"
+                size="is-medium"
+                show-value
+              >
                 Basic</b-progress
               >
             </div>
@@ -31,17 +46,32 @@
               <p class="is-size-4 p-title">Programing language</p>
 
               <span>Golang</span>
-              <b-progress :value="vue" size="is-medium" show-value>
+              <b-progress
+                type="is-success"
+                :value="vue"
+                size="is-medium"
+                show-value
+              >
                 Intermediate</b-progress
               >
 
               <span>Javascript</span>
-              <b-progress :value="vue" show-value size="is-medium">
+              <b-progress
+                type="is-success"
+                :value="vue"
+                show-value
+                size="is-medium"
+              >
                 Intermediate</b-progress
               >
 
               <span>Dart</span>
-              <b-progress :value="basic" size="is-medium" show-value>
+              <b-progress
+                type="is-success"
+                :value="basic"
+                size="is-medium"
+                show-value
+              >
                 Basic</b-progress
               >
             </div>
@@ -49,12 +79,22 @@
               <p class="is-size-4 p-title">Database</p>
 
               <span>MySQL</span>
-              <b-progress :value="react" size="is-medium" show-value>
+              <b-progress
+                type="is-success"
+                :value="react"
+                size="is-medium"
+                show-value
+              >
                 Intermediate</b-progress
               >
 
               <span>MongoDB</span>
-              <b-progress :value="react" show-value size="is-medium">
+              <b-progress
+                type="is-success"
+                :value="react"
+                show-value
+                size="is-medium"
+              >
                 Intermediate</b-progress
               >
             </div>
@@ -62,12 +102,22 @@
               <p class="is-size-4 p-title">Continuous integratione</p>
 
               <span>Git</span>
-              <b-progress :value="vue" size="is-medium" show-value>
+              <b-progress
+                type="is-success"
+                :value="react"
+                size="is-medium"
+                show-value
+              >
                 Intermediate</b-progress
               >
 
               <span>Docker</span>
-              <b-progress :value="basic" show-value size="is-medium">
+              <b-progress
+                type="is-success"
+                :value="basic"
+                show-value
+                size="is-medium"
+              >
                 Basic</b-progress
               >
             </div>
@@ -131,5 +181,17 @@ export default {
 }
 .progress-wrapper:not(:last-child) {
   margin-bottom: 0.5rem !important;
+}
+
+.progress.is-success::-webkit-progress-value {
+  background-color: #00a5a9 !important;
+}
+
+.progress.is-success::-moz-progress-bar {
+  background-color: #00a5a9 !important;
+}
+
+.progress.is-success::-ms-fill {
+  background-color: #00a5a9 !important;
 }
 </style>

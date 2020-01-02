@@ -5,6 +5,7 @@ import PageEducation from '@/views/PageEducation.vue'
 import PageWorkExperience from '@/views/PageWorkExperience.vue'
 import PageSkills from '@/views/PageSkills.vue'
 import PageCertification from '@/views/PageCertification.vue'
+import PagePortfolio from '@/views/PagePortfolio.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/certification',
     name: 'certification',
     component: PageCertification
+  },
+  {
+    path: '/portfolio',
+    name: 'portfolio',
+    component: PagePortfolio
   }
 ]
 
