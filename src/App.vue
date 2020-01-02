@@ -31,6 +31,7 @@
           <router-link to="/work-experience" class="navbar-item"
             >WORK EXPERIENCE
           </router-link>
+          <router-link to="/skills" class="navbar-item">SKILLS </router-link>
           <router-link to="/certification" class="navbar-item"
             >CERTIFICATIONS
           </router-link>
@@ -67,6 +68,7 @@ body {
   background-image: url('~@/assets/images/bg.jpg');
   background-size: cover;
   height: 100vh;
+  background-color: #808080;
 }
 .bg-o {
   background-color: transparent !important;

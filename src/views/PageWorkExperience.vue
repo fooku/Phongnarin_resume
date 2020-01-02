@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="column is-1 ccc has-text-centered">
-      <router-link to="/work-experience">
+      <router-link to="/skills">
         <i class="fas fa-chevron-left fa-5x animated-b"></i
       ></router-link>
     </div>

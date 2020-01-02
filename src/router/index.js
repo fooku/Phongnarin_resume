@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '@/views/PageHome.vue'
 import PageEducation from '@/views/PageEducation.vue'
 import PageWorkExperience from '@/views/PageWorkExperience.vue'
+import PageSkills from '@/views/PageSkills.vue'
+import PageCertification from '@/views/PageCertification.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,6 +23,16 @@ const routes = [
     path: '/work-experience',
     name: 'work-experience',
     component: PageWorkExperience
+  },
+  {
+    path: '/skills',
+    name: 'skills',
+    component: PageSkills
+  },
+  {
+    path: '/certification',
+    name: 'certification',
+    component: PageCertification
   }
 ]
 
