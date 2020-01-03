@@ -1,48 +1,7 @@
 <template>
   <div class="bg">
-    <nav
-      class="navbar container bg-o "
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <!-- <a class="navbar-item">
-          @Fooku
-        </a> -->
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div class="navbar-menu">
-        <div class="navbar-end">
-          <router-link to="/" class="navbar-item">ABOUT ME</router-link>
-          <router-link to="/education" class="navbar-item"
-            >EDUCATION
-          </router-link>
-          <router-link to="/work-experience" class="navbar-item"
-            >WORK EXPERIENCE
-          </router-link>
-          <router-link to="/skills" class="navbar-item">SKILLS </router-link>
-          <router-link to="/certification" class="navbar-item"
-            >CERTIFICATIONS
-          </router-link>
-          <router-link to="/portfolio" class="navbar-item"
-            >PORTFOLIO
-          </router-link>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container main-m">
+    <NavBar />
+    <div class="container mb-3 main-m">
       <div class="columns">
         <div class="column is-4">
           <ImageCard />
@@ -55,10 +14,12 @@
 
 <script>
 import ImageCard from '@/components/ImageCard.vue'
+import NavBar from '@/components/NavBar.vue'
 
 export default {
   components: {
-    ImageCard
+    ImageCard,
+    NavBar
   }
 }
 </script>
@@ -163,5 +124,8 @@ a.navbar-item.is-active,
 }
 .button.is-success {
   background-color: #00a5a9 !important;
+}
+.mb-3 {
+  margin-bottom: 3rem !important;
 }
 </style>

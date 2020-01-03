@@ -28,9 +28,9 @@
           </section>
           <div class="columns is-multiline">
             <div class="column is-4">
-              <div class="cw" @click="clinkModal('cer01.png')">
+              <div class="cw" @click="clinkModal('cer01.jpg')">
                 <figure class="image">
-                  <img class="crop" src="@/assets/images/cer01.png" />
+                  <img src="@/assets/images/cer01.jpg" />
                 </figure>
                 <div class="overlay">
                   <div class="text">Getting Started with Vue.js</div>
@@ -38,9 +38,9 @@
               </div>
             </div>
             <div class="column is-4">
-              <div class="cw" @click="clinkModal('cer02.png')">
+              <div class="cw" @click="clinkModal('cer02.jpg')">
                 <figure class="image">
-                  <img class="crop" src="@/assets/images/cer02.png" />
+                  <img src="@/assets/images/cer02.jpg" />
                 </figure>
                 <div class="overlay">
                   <div class="text">Web Performance Optimization</div>
@@ -49,19 +49,9 @@
             </div>
 
             <div class="column is-4">
-              <div class="cw">
+              <div class="cw" @click="clinkModal('cer03.jpg')">
                 <figure class="image">
-                  <img class="crop" src="@/assets/images/cer00.png" />
-                </figure>
-                <div class="overlay">
-                  <div class="text">An outstanding intern of the year 2018</div>
-                </div>
-              </div>
-            </div>
-            <div class="column  is-4">
-              <div class="cw">
-                <figure class="image">
-                  <img class="crop" src="@/assets/images/cer00.png" />
+                  <img src="@/assets/images/cer03.jpg" />
                 </figure>
                 <div class="overlay">
                   <div class="text">Exposition of engineering project 2018</div>
@@ -69,12 +59,32 @@
               </div>
             </div>
             <div class="column  is-4">
-              <div class="cw">
+              <div class="cw" @click="clinkModal('cer04.jpg')">
                 <figure class="image">
-                  <img class="crop" src="@/assets/images/cer00.png" />
+                  <img src="@/assets/images/cer04.jpg" />
                 </figure>
                 <div class="overlay">
                   <div class="text">Professional web designer 2013</div>
+                </div>
+              </div>
+            </div>
+            <div class="column  is-4">
+              <div class="cw" @click="clinkModal('cer05.jpg')">
+                <figure class="image">
+                  <img src="@/assets/images/cer05.jpg" />
+                </figure>
+                <div class="overlay">
+                  <div class="text">Cooperative Education</div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="cw" @click="clinkModal('cer06.jpg')">
+                <figure class="image crop">
+                  <img src="@/assets/images/cer06.jpg" />
+                </figure>
+                <div class="overlay">
+                  <div class="text">An outstanding intern of the year 2018</div>
                 </div>
               </div>
             </div>
@@ -82,14 +92,14 @@
         </div>
       </div>
       <b-modal :active.sync="isImageModalActive">
-        <p class="image is-4by3">
+        <p class="image">
           <img :src="img" />
         </p>
       </b-modal>
     </div>
     <div class="column is-1 ccc has-text-centered">
       <router-link to="/portfolio">
-        <i :class="`fas fa-chevron-left fa-5x ${anime}`"></i
+        <i class="fas fa-chevron-left fa-5x animated-b"></i
       ></router-link>
     </div>
   </fragment>
@@ -106,7 +116,7 @@ export default {
       anime: 'animated bounceInRight',
       radioButton: 'all',
       isImageModalActive: false,
-      image: 'cer01.png'
+      image: 'cer01.jpg'
     }
   },
   computed: {
@@ -134,6 +144,13 @@ export default {
   position: relative;
   cursor: pointer;
   height: 100%;
+  max-height: 165px;
+}
+
+.crop {
+  max-height: 165px;
+  overflow: hidden; /*hide bounds of image */
+  margin: 0;
 }
 
 .overlay {

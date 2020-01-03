@@ -8,7 +8,15 @@
           </p>
         </header>
         <div class="card-content">
-          <p>Coming soon</p>
+          <div class="columns h-100 is-vcentered">
+            <div class="column is-12 has-text-centered">
+              <p>
+                <i class="fas fa-history fa-5x m-b" />
+              </p>
+              <p>Coming soon</p>
+            </div>
+          </div>
+
           <!-- <section class="c_c">
             <b-field>
               <b-radio-button
@@ -67,4 +75,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.h-100 {
+  height: 50vh;
+}
+.m-b {
+  margin-bottom: 1rem;
+}
+</style>
