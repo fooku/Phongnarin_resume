@@ -9,13 +9,13 @@
         />
       </figure>
     </div>
-    <div class="card-content">
+    <div class="card-content mb-1">
       <p class="title is-4">Phongnarin Nurnuansuwan</p>
       <p class="subtitle is-6">@Fooku</p>
 
       <hr class="m-hr" />
 
-      <div class="columns is-mobile is-centered">
+      <div class="columns is-multiline is-mobile is-centered">
         <div class="column is-2 has-text-centered">
           <i class="fas fa-map-pin fa-lg"></i>
         </div>
@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <div class="columns is-mobile is-centered">
+      <div class="columns is-multiline is-mobile is-centered">
         <div class="column is-2 has-text-centered">
           <i class="far fa-envelope fa-lg"></i>
         </div>
@@ -33,12 +33,14 @@
         </div>
       </div>
 
-      <div class="columns is-mobile is-centered">
+      <div class="columns is-multiline is-mobile is-centered">
         <div class="column is-2 has-text-centered">
           <i class="fab fa-github fa-lg"></i>
         </div>
-        <div class="column">
-          github.com/fooku
+        <div class="column is-10">
+          <a href="https://github.com/fooku" target="_blank">
+            github.com/fooku</a
+          >
         </div>
       </div>
 
@@ -77,6 +79,13 @@ export default {}
 .m-hr {
   margin-top: 1rem;
   margin-bottom: 2.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
 }
 
 hr {

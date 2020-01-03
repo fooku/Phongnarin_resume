@@ -42,6 +42,10 @@ body {
   color: '';
   border-bottom: 2px solid #00a5a9;
 }
+a {
+  color: #00a5a9 !important;
+}
+
 a.navbar-item:focus,
 a.navbar-item:focus-within,
 a.navbar-item:hover,
@@ -127,5 +131,20 @@ a.navbar-item.is-active,
 }
 .mb-3 {
   margin-bottom: 3rem !important;
+}
+
+.mt-3 {
+  margin-top: 3rem !important;
+}
+
+.my-25 {
+  margin-top: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.mr-3 {
+  margin-right: 3rem;
 }
 </style>

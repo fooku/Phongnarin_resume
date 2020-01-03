@@ -7,14 +7,57 @@
             About Me
           </p>
         </header>
-        <div class="card-content p m-t">
-          <p class="title lh">
-            Hello! I’m Phongarin Nurnuansuwan. <br />
-            i'm 22 year old from Bangkok, THAILAND <br />
+        <div class="card-content p">
+          <p class="title">
+            <span class="is-size-1">Hello!</span> <br />I’m Phongarin
+            <br />Nurnuansuwan.
+            <br />
+            i'm 22 year old <br />from Bangkok, THAILAND
           </p>
-          <!-- <p class="subtitle">
-          Jeff Atwood
-        </p> -->
+          <hr class="m-hr my-25" />
+          <div>
+            <a
+              href="https://www.facebook.com/fooku.noon"
+              class="c-facebook"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square fa-3x mr-3"> </i
+            ></a>
+            <a
+              href="https://www.instagram.com/ukigen_u/?fbclid=IwAR3FqKcXUY5yfBWLmfIx2siDCRfA0GFL70JQTd8UW8J4xUUVQ64LnWaPPHY"
+              class="c-ig"
+              target="_blank"
+            >
+              <i class="fab fa-instagram fa-3x mr-3"></i
+            ></a>
+            <a
+              href="https://twitter.com/Fooku13"
+              class="c-twitter"
+              target="_blank"
+            >
+              <i class="fab fa-twitter-square fa-3x mr-3"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/phongnarin-nurnuansuwan-660679179"
+              class="c-linkedin "
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-3x"></i
+            ></a>
+
+            <div class="mt-3">
+              <b-button
+                href="/files/Phongnarin_resume.pdf"
+                size="is-large"
+                tag="a"
+                target="_blank"
+                download
+              >
+                <i class="far fa-file-pdf fa-lx mr-1"></i>
+                Download resume
+              </b-button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -40,4 +83,18 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.c-facebook {
+  color: #3b5998 !important;
+}
+
+.c-ig {
+  color: #d6249f !important;
+}
+.c-twitter {
+  color: #00acee !important;
+}
+.c-linkedin {
+  color: #0e76a8 !important;
+}
+</style>
