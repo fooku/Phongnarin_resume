@@ -1,4 +1,4 @@
-<template>
+<template class="bg">
   <div class="bg">
     <NavBar />
     <div class="container mb-3 main-m">
@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style>
+html {
+  background-color: rgb(41, 38, 85) !important;
+}
 body {
   font-family: 'Nunito', sans-serif !important;
 }
@@ -32,18 +35,12 @@ body {
   background-image: url('~@/assets/images/bg.jpg');
   background-size: cover;
   height: 100vh;
-  background-color: #808080;
 }
 .bg-o {
   background-color: transparent !important;
 }
-.navbar .navbar-menu .navbar-end .router-link-exact-active {
-  background-color: '';
-  color: '';
-  border-bottom: 2px solid #00a5a9;
-}
 a {
-  color: #00a5a9 !important;
+  color: #7bccd4 !important;
 }
 
 a.navbar-item:focus,
@@ -73,6 +70,9 @@ a.navbar-item.is-active,
 }
 .card-main {
   height: 100%;
+  border-radius: 25px;
+}
+.card-main-end {
   border-radius: 25px;
 }
 .img-p {
@@ -127,7 +127,7 @@ a.navbar-item.is-active,
   animation-iteration-count: infinite;
 }
 .button.is-success {
-  background-color: #00a5a9 !important;
+  background-color: #7bccd4 !important;
 }
 .mb-3 {
   margin-bottom: 3rem !important;

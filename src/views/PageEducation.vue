@@ -72,7 +72,7 @@ export default {
   margin-left: 20px;
   margin-bottom: 20px;
   background-color: #fff;
-  border-left: 2px solid #00a5a9;
+  border-left: 2px solid #7bccd4;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 .timeline-item:before {
@@ -85,14 +85,14 @@ export default {
   height: 12px;
   top: 20px;
   left: -29px;
-  border: 3px solid #00a5a9;
+  border: 3px solid #7bccd4;
   z-index: 2;
 }
 .timeline-item:after {
   content: '';
   display: inline-block;
   position: absolute;
-  background-color: #00a5a9;
+  background-color: #7bccd4;
   border-radius: 10px;
   width: 29px;
   height: 2px;

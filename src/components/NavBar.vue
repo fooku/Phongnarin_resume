@@ -31,6 +31,18 @@ export default {}
 
 <style scoped>
 a {
-  color: #4a4a4a !important;
+  color: #ffffff !important;
+}
+
+a.navbar-item:hover {
+  color: #ffffff !important;
+
+  border-bottom: 2px solid #7bccd4;
+}
+
+.navbar .navbar-menu .navbar-end .router-link-exact-active {
+  color: #ffffff !important;
+
+  border-bottom: 2px solid #7bccd4;
 }
 </style>

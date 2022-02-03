@@ -184,14 +184,14 @@ export default {
 }
 
 .progress.is-success::-webkit-progress-value {
-  background-color: #00a5a9 !important;
+  background-color: #7bccd4 !important;
 }
 
 .progress.is-success::-moz-progress-bar {
-  background-color: #00a5a9 !important;
+  background-color: #7bccd4 !important;
 }
 
 .progress.is-success::-ms-fill {
-  background-color: #00a5a9 !important;
+  background-color: #7bccd4 !important;
 }
 </style>

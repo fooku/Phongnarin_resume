@@ -1,23 +1,14 @@
-<template>
-  <fragment>
+<template
+  ><fragment>
     <div class="column is-7">
       <div :class="`card card-main ${anime}`">
         <header class="card-header">
           <p class="card-header-title">
-            Portfolio
+            PORTFOLIO
           </p>
         </header>
         <div class="card-content">
-          <div class="columns h-100 is-vcentered">
-            <div class="column is-12 has-text-centered">
-              <p>
-                <i class="fas fa-history fa-5x m-b" />
-              </p>
-              <p>Coming soon</p>
-            </div>
-          </div>
-
-          <!-- <section class="c_c">
+          <section class="c_c">
             <b-field>
               <b-radio-button
                 v-model="radioButton"
@@ -34,26 +25,29 @@
                 Other
               </b-radio-button>
             </b-field>
-          </section> -->
+          </section>
           <div class="columns is-multiline">
-            <!-- <div class="column is-4">
-              <div class="cw">
+            <div class="column is-4">
+              <div
+                class="cw"
+                @click="redirect('https://wellbalancedenglish.com/')"
+              >
                 <figure class="image">
-                  <img class="crop" src="@/assets/images/cer02.png" />
+                  <img src="@/assets/images/port01.png" alt="port" />
                 </figure>
                 <div class="overlay">
-                  <div class="text">Web Performance Optimization</div>
+                  <div class="text">Well balanced english</div>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="column is-1 ccc has-text-centered">
       <router-link to="/">
-        <i class="fas fa-level-up-alt fa-5x animated-b"></i>
-      </router-link>
+        <i class="fas fa-level-up-alt fa-4x animated-b"></i
+      ></router-link>
     </div>
   </fragment>
 </template>
@@ -69,17 +63,55 @@ export default {
       anime: 'animated bounceInRight',
       radioButton: 'all',
       isImageModalActive: false,
-      image: 'cer01.png'
+      image: 'port01.png'
+    }
+  },
+  methods: {
+    redirect(url) {
+      window.open(
+        url,
+        '_blank' // <- This is what makes it open in a new window.
+      )
+      // window.location.href = url
     }
   }
 }
 </script>
 
 <style>
-.h-100 {
-  height: 50vh;
+.c_c {
+  padding-bottom: 1.5rem;
 }
-.m-b {
-  margin-bottom: 1rem;
+.hh {
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #00a6a9ea;
+}
+
+.cw:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 </style>

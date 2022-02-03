@@ -26,65 +26,101 @@
               </b-radio-button>
             </b-field>
           </section>
-          <div class="columns is-multiline">
-            <div class="column is-4">
-              <div class="cw" @click="clinkModal('cer01.jpg')">
-                <figure class="image">
-                  <img src="@/assets/images/cer01.jpg" />
-                </figure>
-                <div class="overlay">
-                  <div class="text">Getting Started with Vue.js</div>
+          <div class="overflow-scroll">
+            <div class="columns is-multiline">
+              <div class="column is-4">
+                <div class="cw" @click="clinkModal('new-cer01.png')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/new-cer01.png" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">Getting Started with Vue.js</div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="column is-4">
-              <div class="cw" @click="clinkModal('cer02.jpg')">
-                <figure class="image">
-                  <img src="@/assets/images/cer02.jpg" />
-                </figure>
-                <div class="overlay">
-                  <div class="text">Web Performance Optimization</div>
+              <div class="column is-4">
+                <div class="cw" @click="clinkModal('new-cer02.jpeg')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/new-cer02.jpeg" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">Getting Started with Vue.js</div>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="column is-4">
+                <div class="cw" @click="clinkModal('new-cer03.png')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/new-cer03.png" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">Getting Started with Vue.js</div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="cw" @click="clinkModal('cer01.jpg')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/cer01.jpg" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">Getting Started with Vue.js</div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="cw" @click="clinkModal('cer02.jpg')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/cer02.jpg" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">Web Performance Optimization</div>
+                  </div>
+                </div>
+              </div>
 
-            <div class="column is-4">
-              <div class="cw" @click="clinkModal('cer03.jpg')">
-                <figure class="image">
-                  <img src="@/assets/images/cer03.jpg" />
-                </figure>
-                <div class="overlay">
-                  <div class="text">Exposition of engineering project 2018</div>
+              <div class="column is-4">
+                <div class="cw" @click="clinkModal('cer03.jpg')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/cer03.jpg" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">
+                      Exposition of engineering project 2018
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="column  is-4">
-              <div class="cw" @click="clinkModal('cer04.jpg')">
-                <figure class="image">
-                  <img src="@/assets/images/cer04.jpg" />
-                </figure>
-                <div class="overlay">
-                  <div class="text">Professional web designer 2013</div>
+              <div class="column  is-4">
+                <div class="cw" @click="clinkModal('cer04.jpg')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/cer04.jpg" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">Professional web designer 2013</div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="column  is-4">
-              <div class="cw" @click="clinkModal('cer05.jpg')">
-                <figure class="image">
-                  <img src="@/assets/images/cer05.jpg" />
-                </figure>
-                <div class="overlay">
-                  <div class="text">Cooperative Education</div>
+              <div class="column  is-4">
+                <div class="cw" @click="clinkModal('cer05.jpg')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/cer05.jpg" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">Cooperative Education</div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="column is-4">
-              <div class="cw" @click="clinkModal('cer06.jpg')">
-                <figure class="image crop">
-                  <img src="@/assets/images/cer06.jpg" />
-                </figure>
-                <div class="overlay">
-                  <div class="text">An outstanding intern of the year 2018</div>
+              <div class="column is-4">
+                <div class="cw" @click="clinkModal('cer06.jpg')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/cer06.jpg" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">
+                      An outstanding intern of the year 2018
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -144,13 +180,26 @@ export default {
   position: relative;
   cursor: pointer;
   height: 100%;
-  max-height: 165px;
+  max-height: 170px;
 }
-
 .crop {
-  max-height: 165px;
+  max-height: 170px;
   overflow: hidden; /*hide bounds of image */
   margin: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .cw {
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    max-height: 300px;
+  }
+  .crop {
+    max-height: 300px;
+    overflow: hidden; /*hide bounds of image */
+    margin: 0;
+  }
 }
 
 .overlay {
@@ -180,5 +229,9 @@ export default {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.overflow-scroll {
+  height: 390px;
+  overflow: scroll;
 }
 </style>
