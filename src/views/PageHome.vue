@@ -8,11 +8,11 @@
           </p>
         </header>
         <div class="card-content p">
-          <p class="title">
-            <span class="is-size-1">Hello!</span> <br />I’m Phongarin
-            <br />Nurnuansuwan.
-            <br />
-            i'm 22 year old <br />from Bangkok, THAILAND
+          <p class="title line-hight-introduce">
+            <span class="is-size-1">Hello!</span> <br />
+            I'm a full-stack software engineer <br />
+            who is keen to keep learning in a rapidly changing technology world
+            while emphasizing retaining code quality.
           </p>
           <hr class="m-hr my-25" />
           <div>
@@ -96,5 +96,8 @@ export default {
 }
 .c-linkedin {
   color: #0e76a8 !important;
+}
+.line-hight-introduce {
+  line-height: 1.6;
 }
 </style>

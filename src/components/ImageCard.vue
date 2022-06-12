@@ -44,20 +44,16 @@
         </div>
       </div>
 
-      <!-- <div class="columns is-mobile is-centered">
-            <div class="column has-text-centered">
-              <i class="far fa-envelope fa-2x"></i>
-            </div>
-            <div class="column has-text-centered">
-              <i class="fab fa-github fa-2x"></i>
-            </div>
-            <div class="column has-text-centered">
-              <i class="fab fa-github fa-2x"></i>
-            </div>
-            <div class="column has-text-centered">
-              <i class="fab fa-github fa-2x"></i>
-            </div>
-          </div> -->
+      <div class="columns is-multiline is-mobile is-centered">
+        <div class="column is-2 has-text-centered">
+          <i class="fab fa-medium fa-lg"></i>
+        </div>
+        <div class="column is-10">
+          <a href="https://fooku-oxy.medium.com" target="_blank">
+            fooku-oxy.medium</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </template>
