@@ -7,8 +7,11 @@
             Work Experience
           </p>
         </header>
-        <div class="card-content p overflow-scroll">
-          <div class="timeline right" id="timeline-5e0c4476567b9">
+        <div class="card-content p">
+          <div
+            class="timeline right overflow-scroll-experience"
+            id="timeline-5e0c4476567b9"
+          >
             <div class="timeline-item">
               <h4>2020 - 2022</h4>
               <span class="item-period"
@@ -125,7 +128,7 @@ export default {
 </script>
 
 <style>
-.overflow-scroll {
+.overflow-scroll-experience {
   height: 565px;
   overflow: scroll;
 }

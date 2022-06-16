@@ -26,7 +26,7 @@
               </b-radio-button>
             </b-field>
           </section>
-          <div class="overflow-scroll">
+          <div class="overflow-scroll-cer">
             <div class="columns is-multiline">
               <div class="column is-4">
                 <div class="cw" @click="clinkModal('new-cer01.png')">
@@ -230,8 +230,8 @@ export default {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.overflow-scroll {
-  height: 390px;
+.overflow-scroll-cer {
+  height: 450px;
   overflow: scroll;
 }
 </style>
