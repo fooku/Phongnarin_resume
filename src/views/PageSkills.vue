@@ -15,31 +15,21 @@
               <span>Vue/Vuex</span>
               <b-progress
                 type="is-success"
-                :value="vue"
+                :value="intermediate"
                 size="is-medium"
                 show-value
               >
-                Intermediate</b-progress
+                middle experienced</b-progress
               >
 
               <span>React/Redux</span>
               <b-progress
                 type="is-success"
-                :value="react"
+                :value="intermediate"
                 show-value
                 size="is-medium"
               >
-                Intermediate</b-progress
-              >
-
-              <span>Flutter</span>
-              <b-progress
-                type="is-success"
-                :value="basic"
-                size="is-medium"
-                show-value
-              >
-                Basic</b-progress
+                middle experienced</b-progress
               >
             </div>
             <div class="column is-6 p-skill">
@@ -48,77 +38,97 @@
               <span>Golang</span>
               <b-progress
                 type="is-success"
-                :value="vue"
+                :value="expert"
                 size="is-medium"
                 show-value
               >
-                Intermediate</b-progress
+                highly experienced</b-progress
               >
 
               <span>Javascript</span>
               <b-progress
                 type="is-success"
-                :value="vue"
+                :value="expert"
                 show-value
                 size="is-medium"
               >
-                Intermediate</b-progress
-              >
-
-              <span>Dart</span>
-              <b-progress
-                type="is-success"
-                :value="basic"
-                size="is-medium"
-                show-value
-              >
-                Basic</b-progress
+                highly experienced</b-progress
               >
             </div>
             <div class="column is-6 p-skill">
               <p class="is-size-4 p-title">Database</p>
 
-              <span>MySQL</span>
+              <span>SQL</span>
               <b-progress
                 type="is-success"
-                :value="react"
+                :value="intermediate"
                 size="is-medium"
                 show-value
               >
-                Intermediate</b-progress
+                middle experienced</b-progress
               >
 
               <span>MongoDB</span>
-              <b-progress
-                type="is-success"
-                :value="react"
-                show-value
-                size="is-medium"
-              >
-                Intermediate</b-progress
-              >
-            </div>
-            <div class="column is-6 p-skill">
-              <p class="is-size-4 p-title">Continuous integratione</p>
-
-              <span>Git</span>
-              <b-progress
-                type="is-success"
-                :value="react"
-                size="is-medium"
-                show-value
-              >
-                Intermediate</b-progress
-              >
-
-              <span>Docker</span>
               <b-progress
                 type="is-success"
                 :value="basic"
                 show-value
                 size="is-medium"
               >
-                Basic</b-progress
+                less experienced</b-progress
+              >
+            </div>
+            <div class="column is-6 p-skill">
+              <p class="is-size-4 p-title">Other technologies</p>
+
+              <span>Git</span>
+              <b-progress
+                type="is-success"
+                :value="expert"
+                size="is-medium"
+                show-value
+              >
+                highly experienced</b-progress
+              >
+
+              <span>Docker</span>
+              <b-progress
+                type="is-success"
+                :value="intermediate"
+                show-value
+                size="is-medium"
+              >
+                middle experienced</b-progress
+              >
+
+              <span>Kafka</span>
+              <b-progress
+                type="is-success"
+                :value="intermediate"
+                show-value
+                size="is-medium"
+              >
+                middle experienced</b-progress
+              >
+
+              <span>Jenkins</span>
+              <b-progress
+                type="is-success"
+                :value="intermediate"
+                show-value
+                size="is-medium"
+              >
+                middle experienced</b-progress
+              >
+
+              <span>Redis</span>
+              <b-progress
+                type="is-success"
+                :value="intermediate"
+                show-value
+                size="is-medium"
+              >
+                middle experienced</b-progress
               >
             </div>
           </div>
@@ -141,30 +151,30 @@ export default {
   },
   data() {
     return {
-      react: 0,
-      vue: 0,
+      intermediate: 0,
+      expert: 0,
       basic: 0,
       anime: 'animated bounceInRight'
     }
   },
   mounted() {
     setTimeout(() => {
-      this.react = 10
+      this.intermediate = 10
     }, 700)
     setTimeout(() => {
-      this.react = 50
+      this.intermediate = 50
     }, 900)
     setTimeout(() => {
-      this.vue = 10
+      this.expert = 10
     }, 700)
     setTimeout(() => {
-      this.vue = 60
+      this.expert = 90
     }, 900)
     setTimeout(() => {
       this.basic = 10
     }, 700)
     setTimeout(() => {
-      this.basic = 35
+      this.basic = 30
     }, 800)
   }
 }
