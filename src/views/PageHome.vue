@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="column is-1 ccc has-text-centered">
+    <div class="column is-1 next-page has-text-centered">
       <router-link to="/education">
         <i class="fas fa-chevron-left fa-5x animated-b"></i
       ></router-link>

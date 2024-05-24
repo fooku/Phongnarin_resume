@@ -29,12 +29,24 @@
           <div class="overflow-scroll-cer">
             <div class="columns is-multiline">
               <div class="column is-4">
+                <div class="cw" @click="clinkModal('CS50x.png')">
+                  <figure class="image crop">
+                    <img src="@/assets/images/CS50x.png" />
+                  </figure>
+                  <div class="overlay">
+                    <div class="text">
+                      CS50's Introduction to Computer Science
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
                 <div class="cw" @click="clinkModal('new-cer01.png')">
                   <figure class="image crop">
                     <img src="@/assets/images/new-cer01.png" />
                   </figure>
                   <div class="overlay">
-                    <div class="text">Getting Started with Vue.js</div>
+                    <div class="text">Ethereum 101</div>
                   </div>
                 </div>
               </div>
@@ -44,7 +56,7 @@
                     <img src="@/assets/images/new-cer02.jpeg" />
                   </figure>
                   <div class="overlay">
-                    <div class="text">Getting Started with Vue.js</div>
+                    <div class="text">Ethereum & Solidity</div>
                   </div>
                 </div>
               </div>
@@ -54,7 +66,7 @@
                     <img src="@/assets/images/new-cer03.png" />
                   </figure>
                   <div class="overlay">
-                    <div class="text">Getting Started with Vue.js</div>
+                    <div class="text">NFT Developer</div>
                   </div>
                 </div>
               </div>
@@ -133,7 +145,7 @@
         </p>
       </b-modal>
     </div>
-    <div class="column is-1 ccc has-text-centered">
+    <div class="column is-1 next-page has-text-centered px-5">
       <router-link to="/portfolio">
         <i class="fas fa-chevron-left fa-5x animated-b"></i
       ></router-link>

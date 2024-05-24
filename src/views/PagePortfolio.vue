@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="column is-1 ccc has-text-centered">
+    <div class="column is-1 next-page has-text-centered">
       <router-link to="/">
         <i class="fas fa-level-up-alt fa-4x animated-b"></i
       ></router-link>

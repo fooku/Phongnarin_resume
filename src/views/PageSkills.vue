@@ -12,24 +12,23 @@
             <div class="column is-6 p-skill">
               <p class="is-size-4 p-title">Technologies & Framework</p>
 
+              <span>React / Next Js</span>
+              <b-progress
+                type="is-success"
+                :value="intermediate"
+                show-value
+                size="is-medium"
+              >
+                middle experienced</b-progress
+              >
               <span>Vue/Vuex</span>
               <b-progress
                 type="is-success"
-                :value="intermediate"
+                :value="basic"
                 size="is-medium"
                 show-value
               >
-                middle experienced</b-progress
-              >
-
-              <span>React/Redux</span>
-              <b-progress
-                type="is-success"
-                :value="intermediate"
-                show-value
-                size="is-medium"
-              >
-                middle experienced</b-progress
+                less experienced</b-progress
               >
             </div>
             <div class="column is-6 p-skill">
@@ -48,11 +47,21 @@
               <span>Javascript</span>
               <b-progress
                 type="is-success"
-                :value="expert"
+                :value="intermediate"
                 show-value
                 size="is-medium"
               >
-                highly experienced</b-progress
+                middle experienced</b-progress
+              >
+
+              <span>Python</span>
+              <b-progress
+                type="is-success"
+                :value="basic"
+                show-value
+                size="is-medium"
+              >
+                less experienced</b-progress
               >
             </div>
             <div class="column is-6 p-skill">
@@ -61,9 +70,19 @@
               <span>SQL</span>
               <b-progress
                 type="is-success"
-                :value="intermediate"
+                :value="expert"
                 size="is-medium"
                 show-value
+              >
+                highly experienced</b-progress
+              >
+
+              <span>Redis</span>
+              <b-progress
+                type="is-success"
+                :value="intermediate"
+                show-value
+                size="is-medium"
               >
                 middle experienced</b-progress
               >
@@ -101,7 +120,7 @@
                 middle experienced</b-progress
               >
 
-              <span>Kafka</span>
+              <span>Kafka / Amazon SQS</span>
               <b-progress
                 type="is-success"
                 :value="intermediate"
@@ -111,17 +130,7 @@
                 middle experienced</b-progress
               >
 
-              <span>Jenkins</span>
-              <b-progress
-                type="is-success"
-                :value="intermediate"
-                show-value
-                size="is-medium"
-              >
-                middle experienced</b-progress
-              >
-
-              <span>Redis</span>
+              <span>Jenkins / Github Action</span>
               <b-progress
                 type="is-success"
                 :value="intermediate"
@@ -135,7 +144,7 @@
         </div>
       </div>
     </div>
-    <div class="column is-1 ccc has-text-centered">
+    <div class="column is-1 next-page has-text-centered">
       <router-link to="/certification">
         <i class="fas fa-chevron-left fa-5x animated-b"></i
       ></router-link>

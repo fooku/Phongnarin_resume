@@ -10,6 +10,15 @@
         <div class="card-content p">
           <div class="timeline right" id="timeline-5e0c4476567b9">
             <div class="timeline-item">
+              <h4>2023 - 2024</h4>
+              <span class="item-small"
+                >BROWNS English Language School, Brisbane, Australia</span
+              >
+              <p>
+                Intensive General English
+              </p>
+            </div>
+            <div class="timeline-item">
               <h4>2015 - 2019</h4>
               <span class="item-small"
                 >Suranaree University of Technology,</span
@@ -20,26 +29,17 @@
               </p>
             </div>
             <div class="timeline-item">
-              <h4>Specialization Course</h4>
-              <span class="item-period">2008 - 2014</span>
+              <h4>2008 - 2014</h4>
+              <span class="item-period">Hight School</span>
               <p>
                 Ratchasima Witthayalai School, Nakhon Ratchasima
               </p>
             </div>
-            <!-- <div class="timeline-item">
-              <h4 class="item-title">Specialization Course</h4>
-              <span class="item-period">2010</span>
-              <span class="item-small">Apple Inc.</span>
-              <p>
-                Mauris magna sapien, pharetra consectetur fringilla vitae,
-                interdum sed tortor.
-              </p>
-            </div> -->
           </div>
         </div>
       </div>
     </div>
-    <div class="column is-1 ccc has-text-centered">
+    <div class="column is-1 next-page has-text-centered">
       <router-link to="/work-experience">
         <i class="fas fa-chevron-left fa-5x animated-b"></i
       ></router-link>

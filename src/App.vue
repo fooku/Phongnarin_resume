@@ -99,10 +99,11 @@ a.navbar-item.is-active,
 .lh {
   line-height: 160% !important;
 }
-.ccc {
+.next-page {
   margin: auto;
   width: 60%;
-  padding: 10px;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 .animated-b {
   -webkit-animation-duration: 1s;
